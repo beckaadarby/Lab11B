@@ -33,9 +33,9 @@ class Deck
 					cards[c].setSuit(suits[d]);
 				}
 			}
-			for(int d = 0; d<4; d++)
+			for(int d = 0; d<14; d++)
 			{
-				for(int c =(d * 13); c<(c +10); c++)
+				for(int c =(d * 4); c<(c +10); c++)
 				{
 					cards[c].setRank(ranks[d]);
 				}
@@ -45,6 +45,13 @@ class Deck
 				for(int c =((d * 13)+10); c<(c+4); c++)
 				{
 					cards[c].setRank(ranks[10]);
+				}
+			}
+			for(int d = 0; d<11; d++)
+			{
+				for(int c =((d * 13)+10); c<(c+4); c++)
+				{
+					cards[c].setValue(Values[d]);
 				}
 			}
 	}
