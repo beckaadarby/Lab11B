@@ -28,7 +28,7 @@ class Deck
 			cards = new Card[size];
 			for(int d = 0; d<4; d++)
 			{
-				for(int c =(d * 13); c<(c + 13); c++)
+				for(int c =(d + 13); c<(c + 13); c++)
 				{
 					cards[c].setSuit(suits[d]);
 				}
@@ -51,7 +51,7 @@ class Deck
 			{
 				for(int c =(d *4); c<(c+10); c++)
 				{
-					cards[c].setValue(Values[d]);
+					cards[c].setValue(values[d]);
 				}
 			}
 	}
