@@ -47,9 +47,9 @@ class Deck
 					cards[c].setRank(ranks[10]);
 				}
 			}
-			for(int d = 0; d<11; d++)
+			for(int d = 0; d<10; d++)
 			{
-				for(int c =((d * 13)+10); c<(c+4); c++)
+				for(int c =(d *4); c<(c+10); c++)
 				{
 					cards[c].setValue(Values[d]);
 				}
