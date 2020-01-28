@@ -24,9 +24,23 @@ class Deck
 
 	public Deck()
    {
+		 public String toString()
+		 {
+      return "[" + suit + ", " + rank + ", " + value + "]";
+		 }
       size = 52;
 			cards = new Card[size];
-			for(int d = 0; d<4; d++)
+			for(int k = 0; k<52; k++){
+				cards[k] = new Card(suits [0], ranks [0], values[0]);
+			}
+			for(int c = 0; c<52; c++){
+					cards[c].setRank(ranks[(c%4)]);
+				}
+			}
+
+
+
+			/* for(int d = 0; d<4; d++)
 			{
 				for(int c =(d + 13); c<(c + 13); c++)
 				{
@@ -53,10 +67,9 @@ class Deck
 				{
 					cards[c].setValue(values[d]);
 				}
-			}
+			} */
 	}
 
-	}
 /*	private void Shuffle
 	{
 		int rand1 = Math.random() * 52;
