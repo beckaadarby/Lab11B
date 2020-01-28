@@ -9,6 +9,7 @@
 
 public class Card
 {
+
    private String suit;
    private String rank;
    private int value;
@@ -19,6 +20,8 @@ public class Card
       rank = r;
       value = v;
    }
+
+  
 
    public String getSuit()       { return suit; }
    public String getRank()       { return rank; }
