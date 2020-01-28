@@ -24,10 +24,6 @@ class Deck
 
 	public Deck()
    {
-		 public String toString()
-		 {
-      return "[" + suit + ", " + rank + ", " + value + "]";
-		 }
       size = 52;
 			cards = new Card[size];
 			for(int k = 0; k<52; k++){
@@ -35,6 +31,11 @@ class Deck
 			}
 			for(int c = 0; c<52; c++){
 					cards[c].setRank(ranks[(c%4)]);
+				}
+					public String toString()
+					{
+						return "[" + suit + ", " + rank + ", " + value + "]";
+					}
 				}
 			}
 
